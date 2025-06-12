@@ -1,5 +1,5 @@
 {
-  "name": "flight-analyzer",
+  "name": "flight-analyzer-ui",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
