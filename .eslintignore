@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Angular specific
+.angular/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env*
+
+# Package files
+package-lock.json
+yarn.lock
+
+# Test files
+*.spec.ts
+*.test.ts
+
+# Generated files
+*.d.ts 
