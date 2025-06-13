@@ -1,59 +1,86 @@
 # Flight Analyzer UI
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+A service for searching, analyzing, and visualizing flight ticket prices with interactive charts and analytics.
 
-## Development server
+## Project Description
 
-To start a local development server, run:
+Flight Analyzer UI is a web application built with Angular that helps users:
 
+- 🔍 **Flight Search** - convenient interface for finding flights
+- 📊 **Price Analytics** - tracking ticket price dynamics
+- 📈 **Interactive Charts** - visualizing price data
+- 💡 **Smart Recommendations** - analyzing the best time to purchase tickets
+
+## Technologies
+
+- **Frontend**: Angular 19.2.0
+- **UI Components**: PrimeNG 19.1.3
+- **Styling**: SCSS
+- **Testing**: Jasmine & Karma
+- **Code Quality**: ESLint, Prettier
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js (version 18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-ng serve
+git clone <repository-url>
+cd flight-analyzer-ui
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Code scaffolding
+### Development Server
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+```bash
+npm start
+```
+
+The application will be available at `http://localhost:4200/`
+
+### Production Build
+
+```bash
+npm run build
+```
+
+## Available Commands
+
+- `npm start` - start development server
+- `npm run build` - build the project
+- `npm test` - run unit tests
+- `npm run lint` - code linting
+- `npm run format` - code formatting
+
+
+## Development
+
+The project uses modern development tools:
+
+- **ESLint** - for static code analysis
+- **Prettier** - for automatic code formatting
+- **TypeScript** - for type safety
+- **Angular CLI** - for component generation and project management
+
+### Generating New Components
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## License
 
-```bash
-ng generate --help
-```
+This project is private.
 
-## Building
+---
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+*Project is under active development. Functionality will be expanded.*
