@@ -1,0 +1,59 @@
+@use '../../../../styles/core-variables';
+
+.p-active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #53c2ba;
+}
+
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #216ec4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1024px;
+  height: 60px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 50px;
+  }
+
+  .title {
+    white-space: nowrap;
+    color: white;
+  }
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  color: white;
+
+  :not(:last-child) {
+    margin-right: 16px;
+  }
+
+  > li:hover {
+    cursor: pointer;
+    color: #fee392;
+  }
+}
+
+.primary {
+  background-color: #fee392;
+}

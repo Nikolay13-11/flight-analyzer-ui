@@ -29,12 +29,14 @@ Flight Analyzer UI is a web application built with Angular that helps users:
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd flight-analyzer-ui
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -61,7 +63,6 @@ npm run build
 - `npm run lint` - code linting
 - `npm run format` - code formatting
 
-
 ## Development
 
 The project uses modern development tools:
@@ -83,4 +84,4 @@ This project is private.
 
 ---
 
-*Project is under active development. Functionality will be expanded.*
+_Project is under active development. Functionality will be expanded._

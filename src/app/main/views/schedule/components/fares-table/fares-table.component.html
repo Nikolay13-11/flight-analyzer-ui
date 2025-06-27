@@ -1,0 +1,24 @@
+<p-table [value]="fares()" [tableStyle]="{ 'min-width': '60rem' }">
+  <ng-template #header>
+    <tr>
+      <th pSortableColumn="arrivalDate" style="width: 20%">
+        Departure Date <p-sortIcon field="arrivalDate" />
+      </th>
+      <th pSortableColumn="departureDate" style="width: 20%">
+        Arrival Date <p-sortIcon field="departureDate" />
+      </th>
+      <th pSortableColumn="price.value" style="width: 20%">
+        Price <p-sortIcon field="price.value" />
+      </th>
+      <th style="width: 20%">Currency</th>
+    </tr>
+  </ng-template>
+  <ng-template #body let-fare>
+    <tr>
+      <td>{{ fare.arrivalDate | date: 'd MMMM y HH:mm' }}</td>
+      <td>{{ fare.departureDate | date: 'd MMMM y HH:mm' }}</td>
+      <td>{{ fare.price.value }}{{ fare.price.currencySymbol }}</td>
+      <td>{{ fare.price.currencyCode }}</td>
+    </tr>
+  </ng-template>
+</p-table>
