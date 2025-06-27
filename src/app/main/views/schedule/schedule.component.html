@@ -1,0 +1,54 @@
+<form [formGroup]="destinationForm" class="schedule-form">
+  <div class="inputs-container">
+    <p-cascadeSelect
+      formControlName="cityFrom"
+      [options]="optionsFrom$ | async | toSelectOptions"
+      optionGroupLabel="countryName"
+      [optionGroupChildren]="['cities']"
+      optionLabel="cityName"
+      placeholder="Select From"
+      [loading]="loadingFrom()"
+      [style]="{ minWidth: '250px' }"
+    />
+    <p-cascadeSelect
+      formControlName="cityTo"
+      [options]="optionsTo() | toSelectOptions"
+      optionGroupLabel="countryName"
+      [optionGroupChildren]="['cities']"
+      optionLabel="cityName"
+      placeholder="Select To"
+      [disabled]="!cityFrom.value"
+      [style]="{ minWidth: '250px' }"
+      [loading]="loadingTo()"
+    />
+
+    <p-datePicker
+      formControlName="date"
+      [minDate]="minDate"
+      [maxDate]="maxDate()"
+      [disabled]="!cityTo.value"
+      [disabledDates]="disableDates()"
+    />
+  </div>
+
+  <div class="buttons-container">
+    <p-button
+      label="Search"
+      icon="pi pi-search"
+      [loading]="searchFlightsLoading"
+      (onClick)="searchFlights()"
+      [disabled]="!destinationForm.valid"
+    />
+    <p-button
+      label="Search"
+      icon="pi pi-plus"
+      [loading]="analyzeFlightLoading"
+      (onClick)="analyzeFlight()"
+      [disabled]="!destinationForm.valid"
+    />
+  </div>
+</form>
+
+<ng-container>
+  <app-fares-table [fares]="[]"></app-fares-table>
+</ng-container>
